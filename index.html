@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>আমার কাজ</title>
+</head>
+
+<body>
+  
+ <div class="contaimer px-12 py-4 grid grid-rows-[auto,1fr,auto] h-[60vh] gap-y-4">
+   
+   <div class="form">
+      <h3 class="font-bold text-3xl">আমার <span class="text-purple-500">কাজ</span></h3>
+      
+      <div class="mt-4">
+         <form class="flex justify-center items-center gap-2">
+           <input class="border-2 border-purple-300 w-full p-2 rounded-md" placeholder="আজকের করনীয়..." type="text" name="text" id="text">
+           <select name="select" id="select_box" class="p-2 rounded-md text-md pointer border-2 border-purple-300 text-xl">
+           </select>
+           <button disabled type="submit" id="addCardForm" class="px-3 py-2 bg-gray-200 text-gray-500 rounded-md whitespace-nowrap text-xl pointer">যোগ করুন</button>
+           <button disabled type="submit" id="formUpdateCard" class="bg-purple-500 px-6 py-2 rounded-md text-xl update_btn hidden">হালালগাদ</button>
+         </form>
+      </div>
+   </div>
+   
+   <div id="card_box_container" class="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-2 h-full"></div>
+   
+   <div>
+     <h2 class="font-bold text-xl">বানিয়েছেন &copy; <span class="text-purple-500">লিহান</span></h2>
+   </div>
+   
+ </div>
+
+<script src="script.js"></script>
+</body>
+
+</html>
